@@ -45,6 +45,6 @@ export default {
   align-items: center;
 }
 #nav-bar #user-panel img {
-  height: 1.5rem; /* ou outro tamanho desejado */
+  height: 1.5rem;
 }
 </style>
