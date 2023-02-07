@@ -6,7 +6,7 @@
     :user="User_src"
   />
   <router-view />
-  <VueFooter />
+  <VueFooter :logo="VueLogo_src" />
 </template>
 
 <script>
@@ -32,7 +32,6 @@ export default {
 <style>
 * {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -45,7 +44,7 @@ export default {
   color: #2c3e50;
 }
 
-.main-container {
+.mainContainer {
   margin: 0;
   padding: 0;
 }

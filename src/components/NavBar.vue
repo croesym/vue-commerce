@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div id="nav-bar">
-      <router-link id="logo-url" to="/">
+    <div id="navBar">
+      <router-link id="logoUrl" to="/">
         <img :src="logo" alt="Vue-logo" />
       </router-link>
-      <div id="user-panel">
+      <div id="userPanel">
         <router-link to="/cart">
           <img :src="cart" alt="Cart-logo" />
         </router-link>
@@ -15,16 +15,14 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   name: "NavBar",
   props: ["logo", "cart", "user"],
 };
 </script>
-
 <style scoped>
-#nav-bar {
+#navBar {
   position: sticky;
   top: 0;
   z-index: 10;
@@ -36,15 +34,15 @@ export default {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
-#nav-bar img {
+#navBar img {
   height: 3rem;
 }
 
-#user-panel {
+#userPanel {
   display: flex;
   align-items: center;
 }
-#nav-bar #user-panel img {
+#navBar #userPanel img {
   height: 1.5rem;
 }
 </style>

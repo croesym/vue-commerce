@@ -1,6 +1,6 @@
 <template>
-  <div id="products-search-container">
-    <div id="products-search">
+  <div id="productsSearchContainer">
+    <div id="productsSearch">
       <input type="text" placeholder="Busque aqui" />
     </div>
   </div>
@@ -11,16 +11,16 @@ export default {
 };
 </script>
 <style scoped>
-#products-search-container {
+#productsSearchContainer {
   margin: 16px;
 }
 
-#products-search {
+#productsSearch {
   padding: 16px;
   width: 100%;
 }
 
-#products-search input {
+#productsSearch input {
   width: 100%;
   border: 1px solid #e2e8f0;
   border-radius: 0.25rem 0 0 0.25rem;
