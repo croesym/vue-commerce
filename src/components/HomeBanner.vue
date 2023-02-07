@@ -12,29 +12,14 @@ export default {
 <style scoped>
 #homeBanner {
   width: 100%;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: normal;
-  line-height: 24px;
-  text-align: start;
-  text-indent: 0;
-  text-transform: none;
-  vertical-align: baseline;
-  white-space: normal;
-  word-spacing: 0;
-  background-attachment: scroll;
-  background-color: rgb(81, 186, 252);
-  background-image: none;
-  background-position: 0% 0%;
-  background-repeat: repeat;
-  color: #ffffff;
   height: 23.75rem;
   margin: 0;
   padding: 144px;
-  max-height: none;
-  min-height: 0;
-  max-width: none;
-  min-width: 0;
+  background-color: rgb(81, 186, 252);
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: start;
   box-sizing: border-box;
 }
 h1 {
