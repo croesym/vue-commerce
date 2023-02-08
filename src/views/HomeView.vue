@@ -1,28 +1,22 @@
 <template>
-  <div class="mainContainer">
+  <div>
     <HomeBanner />
     <ProductSearch />
-    <!-- Teste para visualização da página com conteúdo -->
-    <ProductSearch />
-    <ProductSearch />
-    <ProductSearch />
-    <ProductSearch />
-    <ProductSearch />
-    <ProductSearch />
+    <HomeProduct />
   </div>
 </template>
 
 <script>
 import HomeBanner from "../components/HomeBanner.vue";
-// import HomeProduct from "../components/HomeProduct.vue";
+import HomeProduct from "../components/HomeProduct.vue";
 import ProductSearch from "../components/ProductSearch.vue";
 
 export default {
   name: "HomeView",
   components: {
     HomeBanner,
-    // HomeProduct,
     ProductSearch,
+    HomeProduct,
   },
 };
 </script>
