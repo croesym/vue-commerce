@@ -1,55 +1,55 @@
 <template>
-  <div>
-    <div id="mainContainer">
-      <div id="productGrid">
-        <div class="cardRounded shadow shadow-colored ring-shadow">
-          <div class="imgRound">
-            <a href="">
-              <img
-                src="Public/img/Product.jpg"
-                alt="Espaço para Imagem do produto"
-                class="imgRound"
-              />
-            </a>
-          </div>
-          <div class="textWrap">
-            <div class="itemFlex">
-              <div class="itemContent">
-                <a href="/DETALHE-DO-PRODUTO">
-                  <Span v-pre class="textL">Produto 1</Span>
-                </a>
-              </div>
-              <button tittle="Adicionar aos Favoritos" class="button textL">
-                <font-awesome-icon icon="fab-thin fa-heart" size="1x" />
-              </button>
+  <div id="mainContainer">
+    <div id="productGrid">
+      <div
+        class="cardRounded shadow shadow-colored ring-shadow"
+        v-for="i in 9"
+        :key="i"
+      >
+        <div class="imgRound">
+          <a href="">
+            <img
+              src="Public/img/Product.jpg"
+              alt="Espaço para Imagem do produto"
+              class="imgRound"
+            />
+          </a>
+        </div>
+        <div class="textWrap">
+          <div class="itemFlex">
+            <div class="itemContent">
+              <a href="/DETALHE-DO-PRODUTO">
+                <Span class="textL">Produto {{ i }}</Span>
+              </a>
             </div>
-            <div class="itemData">
-              <p class="textBase">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              </p>
-              <div class="itemFlex">
-                <div class="flexCenter">
-                  <font-awesome-icon icon="fa-solid fa-star" size="lg" />
-                  <font-awesome-icon icon="fa-solid fa-star" size="lg" />
-                  <font-awesome-icon icon="fa-solid fa-star" size="lg" />
-                  <p class="textL marginLeft-2">5 Reviews</p>
-                </div>
-                <p class="textM"><strong>R$50</strong></p>
+            <button tittle="Adicionar aos Favoritos" class="button textL">
+              <font-awesome-icon icon="fab-thin fa-heart" size="1x" />
+            </button>
+          </div>
+          <div class="itemData">
+            <p class="textBase">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <div class="itemFlex">
+              <div class="flexCenter">
+                <font-awesome-icon icon="fa-solid fa-star" size="lg" />
+                <font-awesome-icon icon="fa-solid fa-star" size="lg" />
+                <font-awesome-icon icon="fa-solid fa-star" size="lg" />
+                <p class="textL marginLeft-2">5 Reviews</p>
               </div>
-              <div class="dataFlex">
-                <select name="" id="" class="quantitySelect">
-                  <option value="1">1</option>
-                </select>
-                <button class="addCart">Adicionar ao Carrinho</button>
-              </div>
+              <p class="textM"><strong>R$50</strong></p>
+            </div>
+            <div class="dataFlex">
+              <select name="" id="" class="quantitySelect">
+                <option value="1">1</option>
+              </select>
+              <button class="addCart">Adicionar ao Carrinho</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <!--  -->
 </template>
 
 <script>
