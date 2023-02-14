@@ -3,13 +3,13 @@
     <div id="productGrid">
       <div
         class="cardRounded shadow shadow-colored ring-shadow"
-        v-for="i in 9"
-        :key="i"
+        v-for="product in products"
+        :key="product.Id"
       >
         <div class="imgRound">
           <a href="">
             <img
-              src="Public/img/Product.jpg"
+              src="/img/Product.jpg"
               alt="Espaço para Imagem do produto"
               class="imgRound"
             />
@@ -18,8 +18,8 @@
         <div class="textWrap">
           <div class="itemFlex">
             <div class="itemContent">
-              <a href="/DETALHE-DO-PRODUTO">
-                <Span class="textL">Produto {{ i }}</Span>
+              <a href="">
+                <Span class="textL">{{ product.nome }}</Span>
               </a>
             </div>
             <button tittle="Adicionar aos Favoritos" class="button textL">
@@ -28,16 +28,23 @@
           </div>
           <div class="itemData">
             <p class="textBase">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              {{ product.descricao }}
             </p>
             <div class="itemFlex">
               <div class="flexCenter">
-                <font-awesome-icon icon="fa-solid fa-star" size="lg" />
-                <font-awesome-icon icon="fa-solid fa-star" size="lg" />
-                <font-awesome-icon icon="fa-solid fa-star" size="lg" />
-                <p class="textL marginLeft-2">5 Reviews</p>
+                <template v-for="i in parseInt(product.nota)" :key="i">
+                  <font-awesome-icon icon="fa-solid fa-star" />
+                </template>
+                <template v-for="i in 5 - parseInt(product.nota)" :key="i">
+                  <font-awesome-icon icon="fa-regular fa-star" />
+                </template>
+                <p class="textL marginLeft-2">
+                  {{ product.avaliacoes }} Reviews
+                </p>
               </div>
-              <p class="textM"><strong>R$50</strong></p>
+              <p class="textM">
+                <strong> R${{ product.preco }}</strong>
+              </p>
             </div>
             <div class="dataFlex">
               <select name="" id="" class="quantitySelect">
@@ -55,6 +62,16 @@
 <script>
 export default {
   name: "HomeProduct",
+  data() {
+    return {
+      products: null,
+    };
+  },
+  mounted() {
+    fetch("/db/products.json")
+      .then((response) => response.json())
+      .then((data) => (this.products = data.products.product));
+  },
 };
 </script>
 
