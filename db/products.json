@@ -1,0 +1,86 @@
+{
+  "products": {
+    "product": [
+      {
+        "Id": "1",
+        "nome": "Produto 1",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "preco": "10",
+        "avaliacoes": "5",
+        "nota": "4"
+      },
+      {
+        "Id": "2",
+        "nome": "Produto 2",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "preco": "20",
+        "avaliacoes": "3",
+        "nota": "2"
+
+      },
+      {
+        "Id": "3",
+        "nome": "Produto 3",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "preco": "30",
+        "avaliacoes": "4",
+        "nota": "3"
+
+      },
+      {
+        "Id": "4",
+        "nome": "Produto 4",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "preco": "10",
+        "avaliacoes": "5",
+        "nota": "3"
+
+      },
+      {
+        "Id": "5",
+        "nome": "Produto 5",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "preco": "15",
+        "avaliacoes": "3",
+        "nota": "2"
+
+
+      },
+      {
+        "Id": "6",
+        "nome": "Produto 6",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "preco": "80",
+        "avaliacoes": "4",
+        "nota": "4"
+      },
+      {
+        "Id": "7",
+        "nome": "Produto 7",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "preco": "90",
+        "avaliacoes": "5",
+        "nota": "5"
+
+      },
+      {
+        "Id": "8",
+        "nome": "Produto 8",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "preco": "40",
+        "avaliacoes": "3",
+        "nota": "1"
+
+      },
+      {
+        "Id": "9",
+        "nome": "Produto 9",
+        "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "preco": "55",
+        "avaliacoes": "4",
+        "nota": "5"
+
+      }
+    ]
+  }
+}
