@@ -8,7 +8,6 @@
   <router-view />
   <VueFooter :logo="VueLogo_src" />
 </template>
-
 <script>
 import NavBar from "./components/NavBar.vue";
 import VueFooter from "./components/VueFooter.vue";

@@ -53,7 +53,7 @@
             <div>
               <nav class="flexCol">
                 <p class="fontMedium">Políticas</p>
-                <a href="" class="linkSmall">Política de privacidade</a>
+                <a href="" class="linkSmall">Política de Privacidade</a>
                 <a href="" class="linkSmall">Termos e Condições</a>
                 <a href="" class="linkSmall">Acessibilidade</a>
               </nav>
@@ -82,12 +82,6 @@ footer {
   background-color: #b9e2fc;
   padding: 3rem;
 }
-
-/* #footerContainer {
-  background-color: #b9e2fc;
-  width: 100%;
-  padding: 3rem;
-} */
 
 #mediaGrid {
   display: grid;

@@ -5,7 +5,7 @@
         <img :src="logo" alt="Vue-logo" />
       </router-link>
       <div id="userPanel">
-        <router-link to="/cart">
+        <router-link to="">
           <img :src="cart" alt="Cart-logo" />
         </router-link>
         <router-link to="">
@@ -21,6 +21,7 @@ export default {
   props: ["logo", "cart", "user"],
 };
 </script>
+
 <style scoped>
 #navBar {
   position: sticky;
