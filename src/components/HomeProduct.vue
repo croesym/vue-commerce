@@ -68,7 +68,7 @@ export default {
     };
   },
   mounted() {
-    fetch("/db/products.json")
+    fetch(process.env.BASE_URL + "db/products.json")
       .then((response) => response.json())
       .then((data) => (this.products = data.products.product));
   },
