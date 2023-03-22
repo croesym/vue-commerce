@@ -68,7 +68,9 @@ export default {
     };
   },
   mounted() {
-    fetch("./db/products.json")
+    fetch(
+      "https://raw.githubusercontent.com/croesym/vue-commerce/master/db/products.json"
+    )
       .then((response) => response.json())
       .then((data) => (this.products = data.products.product));
   },
