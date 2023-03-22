@@ -1,3 +1,3 @@
 module.exports = {
-  baseUrl: "/vue-commerce",
+  publicPath: "/vue-commerce",
 };
